@@ -1,0 +1,75 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~bootstrap/scss/bootstrap";
+
+
+body {background-color: beige; color: brown; }
+.container { min-height: 120vh; }
+
+.logoheader
+{
+    width: 20vh;
+    margin-bottom: 2vh;
+    border: 2px solid white;
+    background-color: white;
+} 
+
+nav
+{
+    background-color: #ce352c;
+    position: fixed; 
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-weight: bold;
+}
+
+.bg-light 
+{
+    margin-bottom: -1vh;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    background-color: #ce352c;
+}
+
+
+/**************************** FOOTER ********************************/
+
+footer
+    {
+        background-color:#ce352c;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+    
+    }
+   
+ .logofooter
+    {
+       height: 5vh;
+       width: 5vh;
+       border-radius: 148%;
+       margin-top: 13px;
+       padding-left: 0vh;
+       margin-left: 30px;
+       margin-right: 6px;
+    }
+
+a button
+{
+    margin: 19px;
+}
+.copyright
+{ 
+    color: white;
+    margin-top: 3vh;
+    font-family: monospace;
+    font-size: larger;
+}
