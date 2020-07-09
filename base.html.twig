@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags("app") }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            {% include('menu.html.twig') %}
+{# <div class="container">
+
+            <h1 class="text-center m-4">Mon compte</h1>
+
+            <h4 class="mb-4">Activer votre compte RDI Manager</h4>
+
+            <form action="" method="post">
+
+                <div class="form-group row">
+                    <label for="nom" class="col-sm-2 col-form-label">Nom</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="nom">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="prenom" class="col-sm-2 col-form-label">Prénom</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="prenom">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label disabled">Email</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control bg-light" id="email" placeholder="john.doe@email.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="mobile" class="col-sm-2 col-form-label">Mobile</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="mobile">
+                    </div>
+                </div>
+                <div class="form-group row" id="nom_societe">
+                    <label for="nom_societe" class="col-sm-2 col-form-label" id="nom_societe">Nom de la société</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control  bg-light" id="nom_societe" placeholder="Société 1">
+                    </div>
+                </div>
+                <div class="form-group row" id="role">
+                    <label for="role" class="col-sm-2 col-form-label">Rôle</label>
+                    <div class="col-sm-8">
+                        <select id="role" class="form-control  bg-light">
+                            <option selected>Administrateur</option>
+                            <option>Client</option>
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center button mb-4">
+                <input type="submit" class="btn btn-secondary" value="Annuler">
+                <input type="submit" class="btn btn-success" value="Valider">
+            </div>
+
+
+
+            <div id="modifier">
+        
+                <h4 class="col-md-4 text-center mx-auto mt-4 mb-4">Changer votre mot de passe</h4>
+
+                <form class="changer_mdp" action="" method="post">
+
+                    <div class="form-group row">
+                        <label for="password" class="col-sm-2 col-form-label">Mot de passe actuel</label>
+                        <div class="col-sm-8">
+                          <input type="password" class="form-control" id="password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="new_mdp" class="col-sm-2 col-form-label">Nouveau mot de passe</label>
+                        <div class="col-sm-8">
+                          <input type="password" class="form-control" id="new_mdp">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="confirm_mdp" class="col-sm-2 col-form-label">Retapez le mot de passe</label>
+                        <div class="col-sm-8">
+                          <input type="password" class="form-control" id="confirm_mdp">
+                        </div>
+                    </div>
+
+                    <div class="text-center button mb-4">
+                        <input type="submit" class="btn btn-primary" value="Modifier">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div> #}
+    
+        <footer>
+            <a href="maquette12.html"><button> < </button></a>
+            <p class="copyright">Copyright Eurêka C.I</p>
+            <img class="logofooter" src="img/logo.png" alt="">
+            <a href="index2.html"><button> > </button></a>
+        </footer>    
+        
+        
+        {% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags("app") }}
+        {% endblock %}
+    </body>
+</html>
