@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Form;
-
+// Modif Sylvain test pour github seul ce commentaire est ajouté
 use App\Entity\RdiUser;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
